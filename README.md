@@ -337,9 +337,9 @@ const unbondingTx: Transaction = undefined;
 const unsignedWithdrawalPsbt: {psbt: Psbt, fee: number} = withdrawEarlyUnbondedTransaction(
   scripts: {
     unbondingTimelockScript,
-    slashingScript,
-    unbondingTx,  
+    slashingScript,   
   },
+  unbondingTx, 
   withdrawalAddress,
   network,
   feeRate,
